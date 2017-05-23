@@ -1,0 +1,66 @@
+<div class="panel panel-default">
+  <div class="panel-body"></div>
+  <h1>Welcome to ...</h1>
+  <img id="welcome">
+</div>
+
+
+{{!-- Handlebars section for routing the burgers within the database and also the html for the burgers within the database --}}
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+
+<h2 class="title">Good Burgers, Ready to Eat!</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#unless this.devoured}}
+      <li>
+        {{this.burger_name}}
+
+        <form action="/{{this.id}}?_method=PUT" method="POST">
+          <input type="hidden" name="devoured" value="true">
+          <button type="submit" class="text">Eat It Up!</button>
+        </form>
+      </li>
+    {{/unless}}
+  {{/each}}
+</ul>
+
+</div>
+
+{{!-- Handlebars section for routing burgers that have been eaten to the frontend and the html  --}}
+  <div class="col-md-4">
+
+<h2 class="title"> Burgers that have been eaten!</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#if this.devoured}}
+      <li>
+        {{this.burger_name}}
+      </li>
+    {{/if}}
+  {{/each}}
+</ul>
+
+</div></div>
+
+{{!-- Adding burger to the database through the various HTML frontend elements --}}
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+
+<h2 class="title">Add a Burger</h2>
+<form class="create-update-form" action="/" method="POST">
+
+  <div class="form-group">
+    <label for="ca" class="text">Burger Name:</label>
+    <input type="text" id="ca" name="name" class="text">
+  </div>
+
+
+{{!-- Button for adding a new burger --}}
+
+  <button type="submit" class="text">Add Burger</button>
+</form>
+ </div></div>

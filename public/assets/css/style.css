@@ -1,0 +1,53 @@
+body {
+    background-image: url("../../images/not-on-theme.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+    background: #fff000;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: orange;
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
+
+.panel {
+    background-color: #68b8e0 !important;
+    background-image: url("../../images/blue-logo.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 80px;
+    color: white;
+}
+
+.title {
+    color: white;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.text {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+#ca {
+    background-color: yellow;
+}
+
+button {
+    background-color: #ffa2a2;
+}
