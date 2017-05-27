@@ -2,7 +2,7 @@
 
 # Week of 15 Homework Sequelize
 
-	## Link to Heroku: https://good-burger.herokuapp.com/
+	## Link to Heroku: https://good-burger-delux.herokuapp.com/
 
 
 ### Overview of App 
