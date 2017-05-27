@@ -18,19 +18,18 @@
   "author": "Nico",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nicothegeeko/burger/issues"
+    "url": "https://github.com/nicothegeeko/sequelized-burger/issues"
   },
   "homepage": "https://github.com/nicothegeeko/burger#readme",
   "dependencies": {
     "body-parser": "^1.17.1",
-    "express": "^4.15.2",
+    "express": "^4.15.3",
     "express-handlebars": "^3.0.0",
     "method-override": "^2.3.8",
     "mysql": "^2.13.0"
   },
-  "engines":{
-    "node":"7.3.0",
+  "engines": {
+    "node": "7.3.0",
     "npm": "3.10.10"
   }
 }
-
